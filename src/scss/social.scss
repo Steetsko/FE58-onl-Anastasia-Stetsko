@@ -1,0 +1,109 @@
+.social{
+  background-color: $_blue;
+  padding: 71px 0;
+  @media (max-width: 320px){
+    padding-top: 34px;
+    padding-bottom: 0;
+  }
+}
+.social-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  @media(max-width:320px){
+    flex-direction: column;
+  }
+}
+.social-card{
+  max-width: 370px;
+  text-align: center;
+  margin: 10px;
+  @media (max-width: 1024px){
+    width: 315px;
+  }
+
+  @media(max-width:320px){
+    width: 280px;
+    margin-bottom: 69px;
+    margin-left: 0;
+  }
+  h2{
+    color: $_white;
+    font-size: 18px;
+    text-transform: uppercase;
+    @media (max-width: 1024px){
+      font-size: 14px;;
+    }
+  }
+  .social-card_desc{
+    p{
+      color: $_white;
+      margin-top: 29px;
+      font-size: 18px;
+      font-weight: $_font_weight3;
+      @media (max-width: 1024px){
+        margin-top: 32px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.social-card_icons{
+  margin-top: 49px;
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: 1024px){
+    margin-top: 32px;
+    justify-content:center;
+  }
+
+}
+.social-card_icon{
+  width: 39px;
+  height: 39px;
+  border: 2px solid #C6CBCD;
+  overflow: hidden;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a{
+    font-size: 18px;
+    color: #C6CBCD;
+  }
+  @media (max-width: 1024px){
+    width: 33px;
+    height: 33px;
+  }
+}
+.fa-facebook-f {
+  transition: 0.5s;
+  @media (max-width: 1024px){
+    font-size: 15px;
+  }
+  &:hover {
+    color: #261392;
+    transform: scale(1.5) rotate(360deg);
+  }
+}
+
+.fa-twitter {
+  transition: 0.5s;
+  @media (max-width: 1024px){
+    font-size: 15px;
+  }
+  &:hover {
+    color: #0060f9;
+    transform: scale(1.5) rotate(360deg);
+  }
+}
+.fa-linkedin{
+  transition: 0.5s;
+  @media (max-width: 1024px){
+    font-size: 15px;
+  }
+  &:hover {
+    color: #c97eff;
+    transform: scale(1.5) rotate(360deg);
+  }
+}
